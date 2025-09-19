@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #2c3e50; /* Azul escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+}
+
+.organizacao {
+    display: flex;
+}
+
+
+.container-principal {
+    display: flex; /* Ativa o Flexbox para alinhar os filhos lado a lado */
+    justify-content: center; /* Centraliza o conteúdo principal horizontalmente */
+    align-items: flex-start; /* Alinha os itens ao topo do contêiner */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    gap: 40px; /* Adiciona espaço entre a tabela e a imagem */
+}
+
+.area-tabela {
+    flex: 2; /* Permite que a tabela ocupe 2 partes do espaço disponível */
+    min-width: 400px; /* Largura mínima para evitar que a tabela fique muito pequena */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.area-lateral-lista {
+    flex: 1; /* Permite que a imagem ocupe 1 parte do espaço disponível */
+    max-width: 300px; /* Largura máxima para a imagem lateral */
+    min-width: 250px; /* Largura mínima para evitar que fique muito pequena */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+img {
+    display: flex;
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    gap: 20px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #2c3e50;
+}
+
+h2{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
